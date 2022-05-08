@@ -21,5 +21,5 @@ Pizza.prototype.cost = function(){
     ["Bell-Peppers", 2.00],
     ["Onions", 1.00]
   ]);
-this.pizzaTogs.forEach(function(element) {
+this.pizzaToppings.forEach(function(element) {
 
