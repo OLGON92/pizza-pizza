@@ -21,5 +21,10 @@ Pizza.prototype.cost = function(){
     ["Bell-Peppers", 2.00],
     ["Onions", 1.00]
   ]);
-this.pizzaToppings.forEach(function(element)
+this.pizzaToppings.forEach(function(element) {
+  totalCost += pizzaToppings.get(element)
+});
+price = pizzaSize.get(this.pizzaSize) + totalCost;
+return price;
+} 
 
