@@ -11,6 +11,83 @@
   <div class="jumbotron">
     <p> Luigi's Casa Della Pizza</p>
   </div>
-  
+  <h1>Create Your Pizza </h1>
+  <form id="new-pizza">
+    <div id="pizzaSize">
+      <div id="pizza">
+        <div id="pizzaForm">
+          <label for="pizzaSize1">Small</label>
+          <input type="radio"  name="pizzaSize" id="pizzaSize1" checked="checked" value="Small">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="pizzaSize2">Medium</label>
+          <input type="radio"  name="pizzaSize" id="pizzaSize2" value="Medium">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="pizzaSize3">Large</label>
+          <input type="radio"  name="pizzaSize" id="pizzaSize3" value="Large">
+        </div>
+      </div>
+    </div><br>
+    <div id="pizzaToppings">
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="Topping1">Artisanal Salami</label>
+          <input type="checkbox"  name="Toppings" id="Topping1" value="Salami">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="Topping2">Sausage</label>
+          <input type="checkbox"  name="Toppings" id="Topping2" value="Sausage">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="Topping3">Pepperoni</label>
+          <input type="checkbox"  name="Toppings" id="Topping3" value="Pepperoni">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="Topping4">Mushroom</label>
+          <input type="checkbox"  name="Toppings" id="Topping4" value="Mushroom">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="Topping5">Bell-Peppers</label>
+          <input type="checkbox"  name="Toppings" id="Topping5" value="Peppers">
+        </div>
+      </div>
+      <div id="pizza">
+        <div id="zaForm">
+          <label for="Topping6">Onions</label>
+          <input type="checkbox"  name="Toppings" id="Topping6" value="Onions">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="button">
+      <button type="submit" class="btn-primary">Add Pizza</button>
+    </div>
+  </form>
+  <div id="yourOrder">
+    <div id="costDisplay">
+      <h2>Your Order:</h2><br>
+      <details>
+        <summary>
+          <span id="pizzaOrder"></span>
+        </summary>
+      <span id="pizzaDetails"></span>
+    </details>
+      <h2><span id="addPizza"></span></h2>
+      <h2>Your Total Cost: $<span id="cost"></span></h2>
+    </div>
+  </div>
 </body>
 </html>
