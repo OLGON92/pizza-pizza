@@ -28,3 +28,20 @@ price = pizzaSize.get(this.pizzaSize) + totalCost;
 return price;
 } 
 
+//User Interface
+
+$(document).ready(function() {
+  $("#new-pizza").submit(function(event){
+  event.preventDefault();
+  let sizeOfPizza = $("input:radio[name=sizeOfPizza]:checked").val();
+  let toppingsForPizza = [];
+  $("input:checkbox[name=toppingsForPizza]:checked").each(function(){
+  toppingsForPizza.push($(this).val());
+  });
+  newPizza = new Pizza(sizeOfPizza, toppingsForPizza);
+  $("#cost").text(newPizza.cost());
+  $("#pizzaOrder").text(sizeOfPizza + " " + "pizza");
+  $("#pizzaDetails").text(toppingsForPizza.join(", "));
+  });
+});
+
