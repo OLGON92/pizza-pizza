@@ -1,30 +1,28 @@
 //Business Logic
 function Pizza(size, toppings) {
-  this.pizzaSize = size;
-  this.pizzaToppings = toppings;
+  this.size = size;
+  this.toppings = toppings;
 }
 
 Pizza.prototype.cost = function(){
-  let totalCost = 0;
-
-  const pizzaSize = new Map ([
-    ["Small", 8.00],
-    ["Medium", 14.00],
-    ["Large", 18.00]
+let toppingsTotal = 0;
+const size = new Map ([
+  ["Small", 8.00],
+  ["Medium", 14.00],
+  ["Large", 18.00]
   ]); 
-
-  const pizzaToppings = new Map ([
-    ["Artisanal Salami", 4.00],
-    ["Sausage", 3.00],
-    ["Pepperoni", 3.00],
-    ["Mushroom", 2.00],
-    ["Bell-Peppers", 2.00],
-    ["Onions", 1.00]
+  const toppings = new Map ([
+  ["Artisanal Salami", 4.00],
+  ["Sausage", 3.00],
+  ["Pepperoni", 3.00],
+  ["Mushroom", 2.00],
+  ["Bell-Peppers", 2.00],
+  ["Onions", 1.00]
   ]);
-this.pizzaToppings.forEach(function(element) {
-  totalCost += pizzaToppings.get(element)
+this.toppings.forEach(function(element) {
+  toppingsTotal += toppings.get(element)
 });
-price = pizzaSize.get(this.pizzaSize) + totalCost;
+price = size.get(this.size) + toppingsTotal;
 return price;
 } 
 
@@ -33,15 +31,14 @@ return price;
 $(document).ready(function() {
   $("#new-pizza").submit(function(event){
   event.preventDefault();
-  let sizeOfPizza = $("input:radio[name=sizeOfPizza]:checked").val();
-  let toppingsForPizza = [];
-  $("input:checkbox[name=toppingsForPizza]:checked").each(function(){
-  toppingsForPizza.push($(this).val());
+  let pizzaSize = $("input:radio[name=pizzaSize]:checked").val();
+  let pizzaToppings = [];
+  $("input:checkbox[name=Toppings]:checked").each(function(){
+  pizzaToppings.push($(this).val());
   });
-  newPizza = new Pizza(sizeOfPizza, toppingsForPizza);
+  newPizza = new Pizza(pizzaSize, pizzaToppings);
   $("#cost").text(newPizza.cost());
-  $("#pizzaOrder").text(sizeOfPizza + " " + "pizza");
-  $("#pizzaDetails").text(toppingsForPizza.join(", "));
+  $("#pizzaOrder").text(pizzaSize + " " + "pizza");
+  $("#pizzaDetails").text(pizzaToppings.join(", "));
   });
 });
-

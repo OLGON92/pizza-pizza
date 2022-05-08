@@ -1,0 +1,124 @@
+html, body{
+  width: 100%;
+  height: auto;
+  background: rgb(115, 115, 230)
+}
+
+.jumbotron{
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  height: 30%;
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+  margin: none;
+  padding: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pizzaSize{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  margin: 4px;
+  padding: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pizzaToppings{
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .25);
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  margin: 4px;
+  padding: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#yourOrder{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  margin: 4px;
+  padding: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary{
+  height: 60px;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  border: 3px solid rgb(255, 255, 255); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+.btn-primary:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.808)
+}
+
+
+h1{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-shadow:2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+}
+
+#costDisplay{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+  
+
+#pizzaOrder{
+  height: 60px;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 3px;
+  border: 2px solid rgb(255, 255, 255); 
+  padding: 2px;
+}
+
+#pizzaOrder:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.808)
+}
