@@ -12,10 +12,10 @@ const size = new Map ([
   ["Large", 18.00]
   ]); 
   const toppings = new Map ([
-  ["Artisanal Salami", 4.00],
+  ["Salami", 4.00],
   ["Sausage", 3.00],
   ["Pepperoni", 3.00],
-  ["Mushroom", 2.00],
+  ["Mushrooms", 2.00],
   ["Bell-Peppers", 2.00],
   ["Onions", 1.00]
   ]);
