@@ -42,12 +42,12 @@ Copyright (c) _2022_ _Oscar Gonzalez_
 _Describe: pizza()
 
 _Test 1: "The function should return the size and toppings that were entered."_
-_Code: console.log(pizzaTest)
+_Code: console.log(pizzaTest)_
 _Expected Result: Pizza {size: 'Large', toppings: Array(2)}
-size: "Medium"
+size: "Large"
 toppings: (2) ['salami', 'onions']_
 
-_Test 2: "It should change any number containing a 3 to the phrase "Won't you be my neighbor?"_
-_Code: createArray("6")_
-_Expected Result: ["0", "1", "2", "Won't you be my neighbor?", "4", "5", "6"]_
+_Test 2: "It should return a price based on the size and toppings selected."_
+_Code: pizzaTest("Large", "salami", "sausage")_
+_Expected Result: 25_
 
